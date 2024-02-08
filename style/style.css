@@ -1,0 +1,304 @@
+body > div {
+  margin: 2rem;
+}
+
+button {
+  margin: 1rem 0.7rem;
+}
+
+button {
+  background: #000;
+  color: #fff;
+  border-color: transparent;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+button:hover {
+  background: #fff;
+  color: #000;
+  border-color: #000;
+}
+
+.btn-primary {
+  background: #00203d;
+}
+
+.btn-secondary {
+  background: #f3bfa5;
+}
+
+.btn-success {
+  background: #24c824;
+}
+
+.btn-error {
+  background: #c82424;
+}
+
+.btn-light {
+  background: white;
+  color: black;
+  border: 1px solid #000;
+}
+
+.btn-link {
+  background: none;
+  color: black;
+  text-decoration: underline;
+  border: none;
+}
+
+.btn-oval {
+  border-radius: 50px;
+  width: 200px;
+}
+
+.btn-round {
+  font-size: 1.5rem;
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+}
+
+.btn-pressable {
+  padding: 20px;
+  font-size: 20px;
+  width: 200px;
+  background: #a29c90;
+  border: none;
+}
+.btn-pressable a {
+  text-decoration: none;
+  color: black;
+}
+.btn-pressable:visited {
+  display: inline-block;
+  box-shadow: 0 10px 0 #6e6e6e;
+  transition: all 0.2s;
+  position: relative;
+}
+.btn-pressable:active {
+  box-shadow: 0 8px 0 #6e6e6e;
+  transform: translateY(5px);
+}
+.btn-pressable:hover {
+  background: #a29c90;
+  color: #000;
+}
+
+.btn-page {
+  width: 50px;
+  height: 50px;
+}
+
+.btn-ellipse {
+  width: 200px;
+  border-radius: 55% 55% 55% 55%;
+}
+
+.btn-gradient {
+  background: linear-gradient(to right, #f3bfa5, #00203d);
+  color: white;
+  border: none;
+  border-radius: 0;
+}
+
+.btn-dashed {
+  border: 1px dashed #6e6e6e;
+}
+
+.media-card-container {
+  display: flex;
+}
+
+.media-card {
+  display: flex;
+  flex-direction: column;
+  width: 324px;
+  border-radius: 1rem;
+  padding: 1rem;
+  background: white;
+  filter: drop-shadow(0 0 0.5rem #a29c90);
+}
+
+.fig-card {
+  display: flex;
+  flex-direction: column;
+  width: 324px;
+  padding: 1rem;
+  background: white;
+  filter: drop-shadow(10px 10px 0.8rem #a29c90);
+}
+
+.search-bar label {
+  display: none;
+}
+
+input[type=search] {
+  display: block;
+  width: 327px;
+  height: 46px;
+  filter: drop-shadow(0.3rem 0.5rem 0.5rem #a29c90);
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding-left: 5%;
+}
+input[type=search]::placeholder {
+  color: #a29c90;
+}
+
+.form-container {
+  margin: 1rem auto;
+  width: 50%;
+  border: 3px solid #a29c90;
+  padding: 3.5rem;
+  background: #6e6e6e;
+  color: white;
+}
+.form-container h2 {
+  font-size: 2rem;
+}
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.form-container input {
+  padding: 1rem;
+  display: block;
+}
+.form-container label {
+  margin: 1rem 0 0.3rem 0;
+  text-align: left;
+}
+.form-container .btn {
+  margin: 1rem auto;
+  padding: 1rem 3rem;
+}
+
+.lightbox-container {
+  /* Lightbox background */
+  /* Number text (1/3 etc) */
+}
+.lightbox-container .row {
+  display: flex;
+  justify-content: center;
+}
+.lightbox-container .row > .column {
+  padding: 0 8px;
+}
+.lightbox-container .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.lightbox-container .column {
+  float: left;
+  width: 20%;
+}
+.lightbox-container .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  /* Modal Content */
+  /* Close Button */
+  /* NEXT button */
+  /* Next & previous buttons */
+}
+.lightbox-container .modal .row {
+  background: black;
+}
+.lightbox-container .modal .row .preview {
+  opacity: 0.6;
+}
+.lightbox-container .modal .caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+.lightbox-container .modal .modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+.lightbox-container .modal .close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+.lightbox-container .modal .close:hover, .lightbox-container .modal .close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+.lightbox-container .modal .mySlides {
+  display: none;
+}
+.lightbox-container .modal .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.lightbox-container .modal .prev,
+.lightbox-container .modal .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  /* On hover, add a black background color with a little bit see-through */
+}
+.lightbox-container .modal .prev:hover,
+.lightbox-container .modal .next:hover {
+  background-color: black;
+}
+.lightbox-container .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.lightbox-container img {
+  margin-bottom: -4px;
+  cursor: pointer;
+}
+.lightbox-container .active,
+.lightbox-container .demo:hover {
+  opacity: 1;
+}
+.lightbox-container img.hover-shadow {
+  transition: 0.3s;
+}
+.lightbox-container .hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*# sourceMappingURL=style.css.map */

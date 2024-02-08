@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ashley Zufelt" />
+
+    <meta name="keywords" content="UI Component Library" />
+    <meta name="description" content="Collection of Vanilla UI Components" />
+    <link rel="stylesheet" type="text/css" href="style/main.css" />
+    <link rel="stylesheet" type="text/css" href="style/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <script defer src="js/form.js" defer></script>
+
+    <title>Component Library</title>
+  </head>
+
+<body>
+  <div class="notepad"></div>
+  <div class="gridbox">
+    <header>
+      <h1> Sample Forms</h1>
+      <h2>UI Library Components </h2>
+      <section>
+          <a href="https://azufelt.github.io/az/wdd230/cityofadairsville/join.html">Membership Form</a>
+          <a href="https://azufelt.github.io/az/wdd230/drizzlybear/stormcenter.html">Contact Form</a>
+         <a href="/components.html">Buttons, Forms, Media Cards</a></li>
+        <a href="presentation/allaboutforms.html">Presentation Slides, HTML Form Inputs</a>
+      </section>
+    </header>
+    <main class="contentbox mainForm">
+      <aside>
+        <h1>Registration Form</h1>
+        <h2>Patterns, RegEx, JS Validation</h2>
+        <div class="form-wrapper">
+          <form class="flex-vertical" action="success.html" novalidate>
+            <div class="flex-vertical">
+              <h3>Create Account Form</h3>
+              <p>Using RegEx & JS Validation</p>
+            </div>
+            <div class="grid-row">
+              <div>
+                <label for="firstname"></label>
+                <span> First Name:</span>
+                <input
+                  class="inputfield"
+                  type="text"
+                  name="name"
+                  id="fname"
+                  placeholder="First Name"
+                  pattern="[a-zA-Z ]{5,}"
+                  required
+                />
+                <span class="error"></span>
+              </div>
+              <div>
+                <label for="lname"></label>
+                <span>Last Name:</span>
+                <input
+                  class="inputfield"
+                  type="text"
+                  id="lname"
+                  name="lname"
+                  placeholder="Last Name"
+                  pattern="[a-zA-Z ]{5,}"
+                  required
+                />
+                <span class="error"></span>
+              </div>
+            </div>
+            <div>
+              <label for="mail">
+                <span>Please enter an email address:</span>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  minlength="8"
+                  placeholder="@email.com"
+                  required
+                />
+                <span class="error"></span>
+              </label>
+            </div>
+            <div class="grid-row">
+              <div>
+                <label for="password"></label>
+                <span>Password:</span>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  minlength="8"
+                  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                  placeholder="Password"
+                  required
+                />
+                <span class="error"></span>
+              </div>
+              <div>
+                <label for="confirmPassword"></label>
+                <span>Confirm Password:</span>
+                <input
+                  type="password"
+                  id="confirmPassword"
+                  name="confirmPassword"
+                  minlength="8"
+                  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                  placeholder="Confirm Password"
+                  required
+                />
+                <span class="error"></span>
+              </div>
+            </div>
+            <div class="button-container">
+              <button>Create Account</button>
+            </div>
+          </form>
+        </div>
+        </aside>    
+    </main>
+    
+
+  </div>
+
+  <footer>&copy;<span id="currentyear">2024</span> | Ashley Zufelt</footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: [
+          "Permanent Marker",
+          "Shadows Into Light Two",
+          "Montserrat",
+        ],
+      },
+    });
+  </script>
+</body>
+
+
+</html>
